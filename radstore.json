@@ -1,0 +1,13 @@
+{
+  // This is an example of what needs to go in Orthanc's configuration file to use this plugin.
+  "RadStore": {
+    "Enabled": false,
+    //key: Python-style Regex
+    // - use .+ to match anything
+    //path: The target directory. 
+    // - $1 will be replaced with the CalledAET (upper-cased)
+    "CalledAETToPath": {
+        ".*": "C:/INBOX/$1"
+    }
+  }
+}
